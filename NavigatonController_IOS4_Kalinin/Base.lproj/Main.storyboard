@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yDT-cA-52Y">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Simple app-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NavigatonController_IOS4_Kalinin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93U-8P-Wcq">
+                                <rect key="frame" x="170" y="602" width="35" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9QB-CY-C7y"/>
+                                    <constraint firstAttribute="width" constant="35" id="tBD-c1-DY2"/>
+                                </constraints>
+                                <state key="normal" title="Push"/>
+                                <connections>
+                                    <segue destination="qBB-Fv-irS" kind="show" id="BCa-VE-Uxh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Launch time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KzQ-Vc-WZ6">
+                                <rect key="frame" x="16" y="112" width="100" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="KPe-04-F1J"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="fO6-Od-LNA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mar 14" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPw-J9-B5G">
+                                <rect key="frame" x="16" y="149" width="53" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Appearance time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIu-Fd-fJV">
+                                <rect key="frame" x="16" y="202" width="131" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="131" id="7WP-N2-zg2"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="131" id="pyR-7Q-uso"/>
+                                    <constraint firstAttribute="height" constant="21" id="tIg-P3-gWH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mar 14" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2fU-Wc-nlv">
+                                <rect key="frame" x="16" y="239" width="53" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="2fU-Wc-nlv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="2I2-6E-71Z"/>
+                            <constraint firstItem="2fU-Wc-nlv" firstAttribute="top" secondItem="yIu-Fd-fJV" secondAttribute="bottom" constant="16" id="69f-CQ-b0l"/>
+                            <constraint firstItem="yIu-Fd-fJV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="7Io-IR-Ucl"/>
+                            <constraint firstItem="KzQ-Vc-WZ6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="X3Y-ac-DcC"/>
+                            <constraint firstItem="93U-8P-Wcq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="aiB-uy-pjV"/>
+                            <constraint firstItem="hPw-J9-B5G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="hwS-LZ-U4B"/>
+                            <constraint firstItem="KzQ-Vc-WZ6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="nF0-9n-X0c"/>
+                            <constraint firstItem="hPw-J9-B5G" firstAttribute="top" secondItem="KzQ-Vc-WZ6" secondAttribute="bottom" constant="16" id="oNz-63-ncs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="93U-8P-Wcq" secondAttribute="bottom" constant="35" id="pjd-tq-fV8"/>
+                            <constraint firstItem="yIu-Fd-fJV" firstAttribute="top" secondItem="hPw-J9-B5G" secondAttribute="bottom" constant="32" id="vI5-vW-yMJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Simple app" id="amq-Z6-F9g">
+                        <barButtonItem key="backBarButtonItem" title="Simple app" id="94X-tC-Ki0"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="lGG-aV-72e">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eQV-zO-b0a">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Update"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="appearenceTime" destination="2fU-Wc-nlv" id="2xb-u5-ITP"/>
+                        <outlet property="appearenceTimeLable" destination="yIu-Fd-fJV" id="Qjq-fe-mTk"/>
+                        <outlet property="launchTime" destination="hPw-J9-B5G" id="SJj-7W-WDF"/>
+                        <outlet property="launchTimeLable" destination="KzQ-Vc-WZ6" id="VqV-Au-h7L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.2" y="118.29085457271366"/>
+        </scene>
+        <!--Simple View Controller-->
+        <scene sceneID="Dm2-Vp-Z81">
+            <objects>
+                <viewController id="qBB-Fv-irS" customClass="SimpleViewController" customModule="NavigatonController_IOS4_Kalinin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ghr-BK-7Jb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="xpM-PT-j9i"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fzt-6C-guC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vqq-1G-Oft" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2001" y="112"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="O6T-Ap-PGJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yDT-cA-52Y" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Jt6-Wc-BaK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="0Du-bl-fvk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DJg-r9-XEl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+</document>
