@@ -34,16 +34,16 @@ class ViewController: UIViewController {
     }
     
     //Устанавливаем время запуска приложения
+    
     func setLaunchTime() {
         let currentDateTime = Date()
-        
+
         let forrmatter = DateFormatter()
         forrmatter.timeStyle = .medium
         forrmatter.dateStyle = .long
         
         let dateTimeString = forrmatter.string(from: currentDateTime)
         launchTime.text = dateTimeString
-        
     }
     
     //Устанавливаем время экрана
@@ -60,8 +60,7 @@ class ViewController: UIViewController {
     
     // Устанавливаем работу кнопки Update
     @objc func update() {
-        let simpleController = SimpleViewController()
-        show(simpleController, sender: self)
+        setViewTime()
     }
 }
 
