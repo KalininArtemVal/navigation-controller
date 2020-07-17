@@ -18,11 +18,11 @@ class ViewController: UIViewController {
     // Используем переменную для определения текущего времени
     var mediumDateTime: String {
         let currentDateTime = Date()
-
+        
         let forrmatter = DateFormatter()
         forrmatter.timeStyle = .medium
         forrmatter.dateStyle = .long
-
+        
         let dateTimeString = forrmatter.string(from: currentDateTime)
         return dateTimeString
     }
@@ -44,7 +44,6 @@ class ViewController: UIViewController {
     }
     
     //Устанавливаем время запуска приложения
-    
     func setLaunchTime() {
         launchTime.text = mediumDateTime
     }
