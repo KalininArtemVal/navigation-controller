@@ -15,7 +15,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var appearenceTimeLable: UILabel!
     @IBOutlet weak var appearenceTime: UILabel!
     
+    // Используем переменную для определения текущего времени
+    var mediumDateTime: String {
+        let currentDateTime = Date()
 
+        let forrmatter = DateFormatter()
+        forrmatter.timeStyle = .medium
+        forrmatter.dateStyle = .long
+
+        let dateTimeString = forrmatter.string(from: currentDateTime)
+        return dateTimeString
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,26 +46,12 @@ class ViewController: UIViewController {
     //Устанавливаем время запуска приложения
     
     func setLaunchTime() {
-        let currentDateTime = Date()
-
-        let forrmatter = DateFormatter()
-        forrmatter.timeStyle = .medium
-        forrmatter.dateStyle = .long
-        
-        let dateTimeString = forrmatter.string(from: currentDateTime)
-        launchTime.text = dateTimeString
+        launchTime.text = mediumDateTime
     }
     
     //Устанавливаем время экрана
     func setViewTime() {
-        let currentDateTime = Date()
-        
-        let forrmatter = DateFormatter()
-        forrmatter.timeStyle = .medium
-        forrmatter.dateStyle = .long
-        
-        let dateTimeString = forrmatter.string(from: currentDateTime)
-        appearenceTime.text = dateTimeString
+        appearenceTime.text = mediumDateTime
     }
     
     // Устанавливаем работу кнопки Update
@@ -63,4 +59,6 @@ class ViewController: UIViewController {
         setViewTime()
     }
 }
+
+
 
